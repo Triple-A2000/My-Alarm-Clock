@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="./asset/style/index.css">
+  </head>
+  <body>
+    <div class="clock-container">
+      <div class="clock">
+        <div class="time">
+          <span class="hours">00</span>:
+          <span class="minutes">00</span>:
+          <span class="seconds">00</span>
+        </div>
+      </div>
+    </div>
+    <div class="alarm-container">
+      <form class="alarm-form">
+        <label for="hours">Hours:</label>
+        <input type="text" id="hours" placeholder="00">
+        <label for="minutes">Minutes:</label>
+        <input type="text" id="minutes" placeholder="00">
+        <button type="submit">Set Alarm</button>
+      </form>
+      <button class="alarm-button" id="alarmButton">
+        <span>Alarm Off</span>
+        <audio id="alarmSound" src="./asset/audio/alarm.mp3"></audio>
+      </button>
+      <button class="snooze-button" id="snoozeButton">Snooze</button>
+      <span id="snoozeCountdown"></span>
+    </div>
+    <script src="./asset/script/index.js"></script>
+  </body>
+</html>
